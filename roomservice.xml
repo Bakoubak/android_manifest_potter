@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <manifest> 
+ 
+<!-- Remotes -->
+   <remote name="gh" fetch="git://github.com/" />
+
+<!-- New Repo Files -->
+    <project name="Bakoubak/android_device_huawei_potter" path="device/huawei/potter" remote="gh" />
+    <project name="Bakoubak/android_device_huawei_kirin710-9-common" path="device/huawei/kirin710-9-common" remote="gh" />
+    <project name="Bakoubak/android_hardware_huawei" path="hardware/huawei" remote="gh" />
+ </manifest>

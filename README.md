@@ -1,4 +1,4 @@
-Repos needed to build Lineage OSS for Potter :
+# **Repos needed to build Lineage OSS for Potter :**
 https://github.com/Bakoubak/android_device_huawei_kirin710-9-common (in device/huawei/kirin710-9-common)
 https://github.com/Bakoubak/android_device_huawei_potter (in device/huawei/potter)
 https://github.com/Bakoubak/android_hardware_huawei (in hardware/huawei)

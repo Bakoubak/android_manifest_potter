@@ -1,7 +1,4 @@
-# **Repos needed to build Lineage OSS for Potter :**
-https://github.com/Bakoubak/android_device_huawei_kirin710-9-common (in device/huawei/kirin710-9-common)  
-https://github.com/Bakoubak/android_device_huawei_potter (in device/huawei/potter)  
-https://github.com/Bakoubak/android_hardware_huawei (in hardware/huawei)  
+# **How to build Lineage OSS for P Smart 2019/Potter:**  
 
 ## **Install those dependencies for Lineage Build:**
 Debian : bc bison build-essential ccache curl flex g++-multilib gcc-multilib git
@@ -16,3 +13,13 @@ sudo chmod a+x /usr/bin/repo
 mkdir Lineage-20 && cd Lineage-20  
 repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs --depth=1  
 repo sync
+
+# **Repos needed to build Lineage OSS for Potter :**
+**You can use roomservice to automate the retrieving of the repos:**  
+curl https://raw.githubusercontent.com/Bakoubak/android_manifest_potter/Lineage-20/roomservice.xml > ./.repo/manifests/roomservice.xml
+
+**Or if you prefer, you can clone every repos one by one:**  
+https://github.com/Bakoubak/android_device_huawei_kirin710-9-common (in device/huawei/kirin710-9-common)  
+https://github.com/Bakoubak/android_device_huawei_potter (in device/huawei/potter)  
+https://github.com/Bakoubak/android_hardware_huawei (in hardware/huawei)  
+

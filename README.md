@@ -23,3 +23,19 @@ https://github.com/Bakoubak/android_device_huawei_kirin710-9-common (in device/h
 https://github.com/Bakoubak/android_device_huawei_potter (in device/huawei/potter)  
 https://github.com/Bakoubak/android_hardware_huawei (in hardware/huawei)  
 
+### **Start build:**  
+To start the build, use those commands:  
+bash  
+export USE_CCACHE=1  
+export CCACHE_DIR=directory/of/your/ccache (This needs to have a lot of space left to store cache, so choose wisely)  
+export CCACHE_EXEC=/usr/bin/ccache  
+ccache -o compression=true  
+source build/envsetup.sh  
+breakfast lineage_potter-eng  
+brunch lineage_potter-eng  
+  
+**And now wait until the build completes !**  
+  
+ls out/target/product/potter  
+  
+**Here is your Lineage build !**
